@@ -1,0 +1,141 @@
+/*STYLES FOR COMPUTER*/
+
+.computerContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font-color: var(--text);
+  font-size: var(--medium);
+  z-index: 1;
+}
+
+.computerLinksContainer {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem;
+  gap: 5rem;
+}
+
+.computerLinksContainer a {
+  font-weight: bold;
+  transition-property: background-color, color;
+  transition-duration: 0.5s;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 5rem;
+}
+
+.computerLinksContainer a:hover {
+  background-color: var(--accent);
+  color: var(--secondary);
+  cursor: pointer;
+}
+
+.computerLogoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/*STYLES FOR MOBILE*/
+.mobileContainer {
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.mobileBarContainer {
+  padding: 2rem;
+  font-size: var(--large);
+}
+
+.mobileBar:hover {
+  cursor: pointer;
+}
+
+.mobileOptionsContainer {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: start;
+  font-size: var(--medium);
+  background-color: var(--primary);
+  z-index: 2;
+  color: var(--secondary);
+  transition-property: left;
+  transition-duration: 0.3s;
+}
+
+.mobileOptionsLogoContainer {
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid var(--secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 6rem;
+  box-sizing: border-box;
+}
+
+.optionHeader {
+    font-family: var(--fancy);
+    font-weight: bold;
+    padding-top: 1rem;
+    font-size: var(--huge);
+}
+
+.closeBtn {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  font-size: var(--xx-large);
+}
+
+.closeBtn:hover {
+    cursor: pointer;
+}
+
+.optionLogo {
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+}
+
+.mobileOptionFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  font-size: var(--large);
+}
+
+.mobileOption {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding-left: 2rem;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    border-bottom: 1px solid var(--secondary);
+}
+
+.optionFooter {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    padding: 1.5rem;
+    box-sizing: border-box;
+}
