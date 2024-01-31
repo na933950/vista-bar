@@ -5,7 +5,7 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  position: fixed;
   font-color: var(--text);
   font-size: var(--medium);
   z-index: 1;
@@ -45,7 +45,7 @@
 /*STYLES FOR MOBILE*/
 .mobileContainer {
   display: flex;
-  position: relative;
+  position: fixed;
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -62,18 +62,18 @@
 }
 
 .mobileOptionsContainer {
-  position: absolute;
+  position: fixed;
   width: 100%;
   display: flex;
   flex-direction: column;
   height: 100vh;
-  justify-content: start;
+  justify-content: center;
   font-size: var(--medium);
   background-color: var(--primary);
   z-index: 2;
   color: var(--secondary);
   transition-property: left;
-  transition-duration: 0.3s;
+  transition-duration: 0.6s;
 }
 
 .mobileOptionsLogoContainer {
@@ -84,8 +84,8 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 6rem;
   box-sizing: border-box;
+  flex: 1;
 }
 
 .optionHeader {
@@ -136,6 +136,9 @@
     flex-direction: column;
     align-items: center;
     flex: 1;
-    padding: 1.5rem;
     box-sizing: border-box;
+}
+
+.optionFooter p {
+  padding-bottom: 1.5rem;
 }

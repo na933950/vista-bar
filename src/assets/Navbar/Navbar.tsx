@@ -19,12 +19,16 @@ const Navbar = ({ pages }: NavbarProps) => {
   const [mobileOptionsPosition, setMobileOptionsPosition] = useState("-100%");
 
   const resizeScreen = () => {
-    setScreenWidth(window.innerWidth);
+    setScreenWidth(window.outerWidth);
   };
 
   useEffect(() => {
     window.addEventListener("resize", resizeScreen);
-  });
+
+    return () => {
+      window.removeEventListener("resize", resizeScreen);
+    };
+  }, []);
 
   const openMobileNav = () => {
     setMobileOptionsPosition("0%");
@@ -34,7 +38,7 @@ const Navbar = ({ pages }: NavbarProps) => {
     setMobileOptionsPosition("-100%");
   };
 
-  const breakpoint = 750;
+  const breakpoint = 900;
 
   const mobileNav = (
     <div className={styles.mobileContainer} onClick={openMobileNav}>
@@ -72,7 +76,9 @@ const Navbar = ({ pages }: NavbarProps) => {
           </div>
         ))}
       </div>
-      <div className={styles.optionFooter}>@ Vista Bar Coaching 2024</div>
+      <div className={styles.optionFooter}>
+        <p>@ Vista Bar Coaching 2024</p>
+      </div>
     </div>
   );
 

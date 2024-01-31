@@ -1,6 +1,7 @@
 import './App.css'
 import Navbar from './assets/Navbar'
 import { FaHome, FaInfoCircle, FaBlog, FaBriefcase } from "react-icons/fa";
+import HeroImage from './pages/HeroImage';
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
   return (
     <div>
       <Navbar pages={pages}/>
+      <HeroImage />
     </div>
   )
 }
