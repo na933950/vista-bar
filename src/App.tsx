@@ -4,7 +4,6 @@ import { FaHome, FaInfoCircle, FaBlog, FaBriefcase } from "react-icons/fa";
 import HeroImage from "./pages/HeroImage";
 import About from "./pages/About";
 import { useRef } from "react";
-import Globe from "./assets/Globe";
 
 function App() {
 
