@@ -55,7 +55,7 @@ const Fade = ({
           const { scrollTop } = ref.current;
           const { top } = ref.current.getBoundingClientRect();
           // You can adjust the scroll threshold as needed
-          if (scrollTop > 100 || top < window.innerHeight) {
+          if (scrollTop > 200 || top < window.innerHeight) {
             fadeElIn();
           }
         }

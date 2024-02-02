@@ -5,20 +5,46 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  transition: 0.3s;
   position: fixed;
-  font-color: var(--text);
+  color: var(--text-secondary);
   font-size: var(--medium);
-  z-index: 1;
+  z-index: 5;
+}
+
+.computerContainerDown {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  transition: 0.3s;
+  background-color: var(--text-secondary);
+  color: var(--text);
+  font-size: var(--medium);
+  z-index: 5;
+  box-shadow: 0px 0px 10px 2px var(--text);
 }
 
 .computerLinksContainer {
   display: flex;
-  gap: 1rem;
   padding: 2rem;
   gap: 5rem;
+  transition-property: padding-top, padding-bottom;
+  transition: 0.3s;
 }
 
-.computerLinksContainer a {
+.computerLinksContainerDown {
+  display: flex;
+  padding: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  gap: 5rem;
+  transition-property: padding-top, padding-bottom;
+  transition: 0.3s;
+}
+
+.computerLinksContainer a, .computerLinksContainerDown a {
   font-weight: bold;
   transition-property: background-color, color;
   transition-duration: 0.5s;
@@ -29,7 +55,7 @@
   border-radius: 5rem;
 }
 
-.computerLinksContainer a:hover {
+.computerLinksContainer a:hover, .computerLinksContainerDown a:hover{
   background-color: var(--accent);
   color: var(--secondary);
   cursor: pointer;
@@ -49,7 +75,8 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  z-index: 1;
+  z-index: 5;
+  color: var(--text-secondary);
 }
 
 .mobileBarContainer {
@@ -70,7 +97,7 @@
   justify-content: center;
   font-size: var(--medium);
   background-color: var(--primary);
-  z-index: 2;
+  z-index: 10;
   color: var(--secondary);
   transition-property: left;
   transition-duration: 0.6s;
@@ -89,10 +116,9 @@
 }
 
 .optionHeader {
-    font-family: var(--fancy);
-    font-weight: bold;
-    padding-top: 1rem;
-    font-size: var(--huge);
+  font-weight: bold;
+  padding-top: 1rem;
+  font-size: var(--large);
 }
 
 .closeBtn {
@@ -103,13 +129,13 @@
 }
 
 .closeBtn:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .optionLogo {
-    position: absolute;
-    left: 2rem;
-    top: 2rem;
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
 }
 
 .mobileOptionFlex {
@@ -121,22 +147,22 @@
 }
 
 .mobileOption {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    padding-left: 2rem;
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
-    border-bottom: 1px solid var(--secondary);
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding-left: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--secondary);
 }
 
 .optionFooter {
-    display: flex;
-    justify-content: end;
-    flex-direction: column;
-    align-items: center;
-    flex: 1;
-    box-sizing: border-box;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  box-sizing: border-box;
 }
 
 .optionFooter p {

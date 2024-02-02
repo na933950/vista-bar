@@ -25,7 +25,8 @@
 }
 
 .letter {
-    color: var(--accent);
+    color: var(--text);
+    font-family: var(--mono);
     font-weight: 800;
     position: relative;
     padding: 0;

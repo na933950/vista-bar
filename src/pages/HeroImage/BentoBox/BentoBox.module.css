@@ -33,12 +33,37 @@
 .l2 {
   flex: 2;
   width: 100%;
-  background-color: var(--secondary);
+  padding: 1rem;
+  box-sizing: border-box;
+  transition-property: padding;
+  transition: 1s;
+}
+
+.l2:hover {
+    padding: 0rem;
+}
+
+@keyframes bop {
+  0% {
+    padding: 0rem;
+  }
+  45% {
+    padding: 0rem;
+  }
+  50% {
+    padding: 1rem;
+  }
+  55% {
+    padding: 0rem;
+  }
+  100% {
+    padding: 0rem;
+  }
 }
 
 @media screen and (min-width: 1200px) {
     .l2 h1 {
-        font-size: var(--x-huge);
+        font-size: var(--huge);
     }
 }
 
@@ -141,7 +166,8 @@ b {
 .r1lt {
   width: 100%;
   flex: 1;
-  background-color: var(--text);
+  animation: bop 6s infinite;
+  box-sizing: border-box;
 }
 
 .r1lb {
@@ -192,5 +218,40 @@ b {
 .r1rb {
     width: 100%;
     flex: 1;
-    background-color: var(--text);
+    animation: bop 7s infinite;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner {
+  width: 100%;
+  height: 100%;
+  background-color: var(--text);
+  border-radius: 1rem;
+  box-sizing: border-box;
+}
+
+.about {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.about:hover {
+    cursor: pointer;
+}
+
+.aboutInner {
+    background-color: var(--secondary);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    transition-property: opacity;
 }

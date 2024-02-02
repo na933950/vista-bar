@@ -17,6 +17,7 @@ const Navbar = ({ pages }: NavbarProps) => {
   //keep track of screen width for resize of navbar
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const [mobileOptionsPosition, setMobileOptionsPosition] = useState("-100%");
+  const [scrollY, setScrollY] = useState(window.scrollY);
 
   const resizeScreen = () => {
     setScreenWidth(window.outerWidth);
@@ -27,6 +28,18 @@ const Navbar = ({ pages }: NavbarProps) => {
 
     return () => {
       window.removeEventListener("resize", resizeScreen);
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -59,7 +72,7 @@ const Navbar = ({ pages }: NavbarProps) => {
       <div className={styles.mobileOptionsLogoContainer}>
         <IoClose className={styles.closeBtn} onClick={closeMobileNav} />
         <img className={styles.optionLogo} src="./logo" alt="logo"></img>
-        <h2 className={styles.optionHeader}>Vista Bar</h2>
+        <h2 className={styles.optionHeader}>Vista Law Prep</h2>
       </div>
       <div className={styles.mobileOptionFlex}>
         {pages.map(({ pageName, pageRouter, pageIcon }) => (
@@ -84,11 +97,11 @@ const Navbar = ({ pages }: NavbarProps) => {
 
   // The navbar when width > breakpoint
   const computerNav = (
-    <div className={styles.computerContainer}>
+    <div className={scrollY < 200 ? styles.computerContainer : styles.computerContainerDown}>
       <div className={styles.computerLogoContainer}>
         <img src="./logo" alt="logo" />
       </div>
-      <div className={styles.computerLinksContainer}>
+      <div className={scrollY < 200 ? styles.computerLinksContainer : styles.computerLinksContainerDown}>
         {pages.map(({ pageName, pageRouter }) => (
           <a onClick={pageRouter}>{pageName}</a>
         ))}
