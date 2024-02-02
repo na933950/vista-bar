@@ -19,8 +19,8 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     padding: 1.5rem;
     padding-left: 3rem;
@@ -30,7 +30,10 @@
   }
   .heading {
     font-size: var(--medium);
-    color: var(--accent);
+    color: var(--text-secondary);
+  }
+  .subtitle {
+    color: var(--text-secondary);
   }
   .auxContainer {
     display: flex;
@@ -53,6 +56,9 @@
   .heading {
     font-size: var(--large);
     color: var(--accent);
+  }
+  .subtitle {
+    color: var(--text);
   }
   .graphicContainer {
     flex: 1;

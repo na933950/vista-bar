@@ -54,11 +54,11 @@ const Navbar = ({ pages }: NavbarProps) => {
   const breakpoint = 900;
 
   const mobileNav = (
-    <div className={styles.mobileContainer} onClick={openMobileNav}>
+    <div className={scrollY < 200 ? styles.mobileContainer : styles.mobileContainerDown} onClick={openMobileNav}>
       <div className={styles.computerLogoContainer}>
         <img src="./logo" alt="logo" />
       </div>
-      <div className={styles.mobileBarContainer}>
+      <div className={scrollY < 200 ? styles.mobileBarContainer : styles.mobileBarContainerDown}>
         <FaBarsStaggered className={styles.mobileBar} />
       </div>
     </div>

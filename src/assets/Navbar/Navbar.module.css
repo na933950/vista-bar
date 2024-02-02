@@ -76,7 +76,21 @@
   justify-content: space-between;
   align-items: center;
   z-index: 5;
+  transition: 0.3s;
   color: var(--text-secondary);
+}
+
+.mobileContainerDown {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  transition: 0.3s;
+  background-color: var(--text-secondary);
+  color: var(--text);
+  z-index: 5;
+  box-shadow: 0px 0px 10px 2px var(--text);
 }
 
 .mobileBarContainer {
@@ -84,7 +98,12 @@
   font-size: var(--large);
 }
 
-.mobileBar:hover {
+.mobileBarContainerDown {
+  padding: 1.5rem;
+  font-size: var(--large);
+}
+
+.mobileBar:hoverm {
   cursor: pointer;
 }
 

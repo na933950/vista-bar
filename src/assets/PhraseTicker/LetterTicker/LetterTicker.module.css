@@ -24,10 +24,22 @@
     padding-bottom: 0.1rem;
 }
 
-.letter {
-    color: var(--text);
-    font-family: var(--mono);
-    font-weight: 800;
-    position: relative;
-    padding: 0;
+@media screen and (min-width: 750px) {
+    .letter {
+        color: var(--text);
+        font-family: var(--mono);
+        font-weight: 800;
+        position: relative;
+        padding: 0;
+    }
 }
+@media screen and (max-width: 750px) {
+    .letter {
+        color: var(--secondary);
+        font-family: var(--mono);
+        font-weight: 800;
+        position: relative;
+        padding: 0;
+    }
+}
+

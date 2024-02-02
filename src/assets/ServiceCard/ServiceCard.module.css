@@ -1,0 +1,142 @@
+.container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary);
+    color: var(--text);
+    text-align: left;
+    box-sizing: border-box;
+    justify-content: start;
+    align-items: start;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 20px 5px #CCCCCC;
+}
+
+.upperContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    padding: 2rem;
+    padding-top: 3.5rem;
+    gap: 2rem;
+    position: relative;
+    background-color: var(--background);
+    z-index: 1;
+}
+
+.lowerContainer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    flex: 1;
+    gap: 2rem;
+    box-sizing: border-box;
+    color: var(--text-secondary)
+}
+
+.iconContainer {
+    position: absolute;
+    padding: 1.5rem;
+    border-radius: 5rem;
+    top: calc(-1.5rem - (var(--large) / 2));
+    left: 10%;
+    background-color: var(--primary);
+    color: var(--text-secondary);
+    font-size: var(--large);
+    z-index: 2;
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    color: var(--text);
+    font-weight: bold;
+}
+
+.title {
+    font-size: var(--small);
+}
+
+.price {
+    font-size: var(--xxx-large);
+}
+
+.amenitiesContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-top: 2rem;
+    line-height: 2;
+    font-size: var(--small);
+    box-sizing: border-box;
+}
+
+.amenity {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    text-align: start;
+    gap: 0.5rem;
+}
+
+.check {
+    font-size: var(--small);
+    min-width: 2rem;
+}
+
+.btnContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.registerBtn {
+    box-sizing: border-box;
+    padding: 1rem;
+    background-color: var(--background);
+    color: var(--text);
+    border-radius: 0.5rem;
+    border: 1.5px solid var(--background);
+    transition-property: background-color, color;
+    transition-duration: 0.3s;
+    flex: 1;
+    text-align: center;
+}
+
+.learnBtn {
+    box-sizing: border-box;
+    padding: 1rem;
+    background-color: var(--primary);
+    color: var(--text-secondary);
+    border-radius: 0.5rem;
+    border: 1.5px solid var(--background);
+    transition-property: background-color, color;
+    transition-duration: 0.3s;
+    flex: 1;
+    text-align: center;
+}
+
+.registerBtn:hover {
+    cursor: pointer;
+    background-color: var(--primary);
+    color: var(--text-secondary);
+}
+
+.learnBtn:hover {
+    cursor: pointer;
+    background-color: var(--background);
+    color: var(--text);
+}

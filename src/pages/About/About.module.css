@@ -49,8 +49,8 @@
     justify-content: start;
     width: 100%;
     gap: 3rem;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 7%;
+    padding-right: 7%;
     box-sizing: border-box;
   }
 }
@@ -108,6 +108,8 @@
 .section2 {
     background-color: var(--primary);
     box-sizing: border-box;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 @media screen and (min-width: 1200px) {
@@ -164,9 +166,8 @@
 @media screen and (min-width: 1200px) {
     .threeJS {
         flex: 1;
-        min-height: 60vh;
         display: flex;
-        max-width: 50%;
+        width: 50%;
       }
 }
 @media screen and (max-width: 1200px) {

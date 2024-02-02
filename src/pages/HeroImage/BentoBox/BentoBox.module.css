@@ -27,7 +27,7 @@
 .l1 {
   flex: 1;
   width: 100%;
-  background-color: var(--primary);
+  background-color: var(--secondary);
 }
 
 .l2 {
@@ -40,7 +40,7 @@
 }
 
 .l2:hover {
-    padding: 0rem;
+  padding: 0rem;
 }
 
 @keyframes bop {
@@ -62,15 +62,15 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .l2 h1 {
-        font-size: var(--huge);
-    }
+  .l2 h1 {
+    font-size: var(--huge);
+  }
 }
 
 @media screen and (max-width: 1200px) {
-    .l2 h1 {
-        font-size: var(--xx-large);
-    }
+  .l2 h1 {
+    font-size: var(--xx-large);
+  }
 }
 
 .l3 {
@@ -112,49 +112,52 @@
 }
 
 .light {
-    color: var(--text-secondary);
+  color: var(--text-secondary);
+}
+.dark {
+  color: var(--text);
 }
 
 b {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 1250px) {
-    h1 {
-        font-size: var(--large);
-    }
-    .iconLight {
-        color: var(--text-secondary);
-        font-size: var(--huge);
-    }
+  h1 {
+    font-size: var(--large);
+  }
+  .iconLight {
+    color: var(--text-secondary);
+    font-size: var(--huge);
+  }
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1250px) {
-    h1 {
-        font-size: var(--medium);
-    }
-    .iconLight {
-        color: var(--text-secondary);
-        font-size: var(--huge);
-    }
+  h1 {
+    font-size: var(--medium);
+  }
+  .iconLight {
+    color: var(--text-secondary);
+    font-size: var(--huge);
+  }
 }
 @media screen and (min-width: 800px) and (max-width: 1000px) {
-    h1 {
-        font-size: var(--medium);
-    }
-    .iconLight {
-        color: var(--text-secondary);
-        font-size: var(--xx-large);
-    }
+  h1 {
+    font-size: var(--medium);
+  }
+  .iconLight {
+    color: var(--text-secondary);
+    font-size: var(--xx-large);
+  }
 }
 @media screen and (max-width: 800px) {
-    h1 {
-        font-size: var(--small);
-    }
-    .iconLight {
-        color: var(--text-secondary);
-        font-size: var(--large);
-    }
+  h1 {
+    font-size: var(--small);
+  }
+  .iconLight {
+    color: var(--text-secondary);
+    font-size: var(--large);
+  }
 }
 
 .r1l {
@@ -183,46 +186,46 @@ b {
 }
 
 .r1rt {
-    width: 100%;
-    flex: 2;
-    background-color: var(--secondary);
-    flex-direction: column;
-    gap: 1rem;
-    box-sizing: border-box;
-    padding: 0.5rem;
+  width: 100%;
+  flex: 2;
+  background-color: var(--secondary);
+  flex-direction: column;
+  gap: 1rem;
+  box-sizing: border-box;
+  padding: 0.5rem;
 }
 
 .r1rt p {
-    font-size: var(--tiny);
-    font-family: "Verdana";
-    color: var(--text-secondary);
+  font-size: var(--tiny);
+  font-family: "Verdana";
+  color: var(--text-secondary);
 }
 
 .options {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.5rem;
 }
 
 .options div {
-    text-align: left;
-    background-color: var(--accent);
-    width: 100%;
-    box-sizing: border-box;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    line-height: 1.5;
+  text-align: left;
+  background-color: var(--accent);
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  line-height: 1.5;
 }
 
 .r1rb {
-    width: 100%;
-    flex: 1;
-    animation: bop 7s infinite;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  flex: 1;
+  animation: bop 7s infinite;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .inner {
@@ -234,24 +237,24 @@ b {
 }
 
 .about {
-    width: 100%;
-    height: 100%;
-    display: flex;
+  width: 100%;
+  height: 100%;
+  display: flex;
 }
 
 .about:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .aboutInner {
-    background-color: var(--secondary);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 1rem;
-    box-sizing: border-box;
-    transition-property: opacity;
+  background-color: var(--secondary);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  transition-property: opacity;
 }

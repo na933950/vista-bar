@@ -16,7 +16,7 @@ const BentoBox = ({ scrollToAbout }: Props) => {
           from="top"
           delay={2900}
         >
-          <h1 className={styles.light}>
+          <h1 className={styles.dark}>
             <b>30</b> Countries
           </h1>
         </Fade>

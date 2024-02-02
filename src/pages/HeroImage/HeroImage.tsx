@@ -34,11 +34,11 @@ const HeroImage = ({ scrollToAbout }: Props) => {
   let headerSize;
 
   if (screenWidth < 600) {
-    headerSize = "var(--xx-large)";
-  } else if (screenWidth >= 600 && screenWidth < 900) {
-    headerSize = "var(--xx-large)";
-  } else if (screenWidth >= 900 && screenWidth < 1100) {
     headerSize = "var(--xxx-large)";
+  } else if (screenWidth >= 600 && screenWidth < 900) {
+    headerSize = "var(--x-huge)";
+  } else if (screenWidth >= 900 && screenWidth < 1100) {
+    headerSize = "var(--x-huge)";
   } else if (screenWidth >= 1100 && screenWidth < 1300) {
     headerSize = "var(--xx-huge)";
   } else if (screenWidth >= 1300) {
@@ -60,7 +60,7 @@ const HeroImage = ({ scrollToAbout }: Props) => {
               </div>
             </Fade>
             <Fade delay={delay * 3} from="left">
-              <p style={{ fontWeight: 700 }}>
+              <p className={styles.subtitle} style={{ fontWeight: 700 }}>
                 Coaching for every step of the legal journey.
               </p>
             </Fade>
