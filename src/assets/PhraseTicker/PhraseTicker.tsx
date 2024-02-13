@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import LetterTicker from "./LetterTicker";
 import styles from "./PhraseTicker.module.css";
 
 interface Props {

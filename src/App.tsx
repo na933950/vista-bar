@@ -6,7 +6,6 @@ import About from "./pages/About";
 import { useRef } from "react";
 import Services from "./pages/Services";
 import Blog from "./pages/Blog";
-import ReactDOM from "react-dom";
 import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {

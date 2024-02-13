@@ -1,7 +1,6 @@
 import styles from "./Article.module.css";
 import hero from "/images/heroimage.jpg";
 import { GiBarbedSun } from "react-icons/gi";
-import { useNavigate } from "react-router-dom";
 
 interface Props {
   img: string;
