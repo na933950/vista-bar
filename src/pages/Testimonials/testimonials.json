@@ -1,0 +1,26 @@
+[
+    {
+        "img": "/images/susan_headshot.jpg",
+        "name": "Mary Bell",
+        "role": "Lawyer",
+        "testimonial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco"
+    },
+    {
+        "img": "/images/susan_headshot.jpg",
+        "name": "John Smith",
+        "role": "Law Student",
+        "testimonial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco"
+    },
+    {
+        "img": "/images/susan_headshot.jpg",
+        "name": "Vivek Ghosh",
+        "role": "Law Student",
+        "testimonial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco"
+    },
+    {
+        "img": "/images/susan_headshot.jpg",
+        "name": "Famitah Ensandoost",
+        "role": "Undergraduate Student",
+        "testimonial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco"
+    }
+]

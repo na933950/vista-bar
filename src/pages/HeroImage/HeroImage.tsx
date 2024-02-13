@@ -48,6 +48,7 @@ const HeroImage = ({ scrollToAbout }: Props) => {
   return (
     <>
       <div className={styles.container} style={{backgroundImage: `url(${heroimage})`}}>
+      <div className={styles.underlay}></div>
         <div className={styles.textContainer}>
           <div className={styles.auxContainer}>
             <Fade delay={delay}>
@@ -70,9 +71,9 @@ const HeroImage = ({ scrollToAbout }: Props) => {
             </Fade>
           </div>
         </div>
-        <div className={styles.graphicContainer}>
+        {<div className={styles.graphicContainer}>
           <BentoBox scrollToAbout={scrollToAbout}/>
-        </div>
+        </div>}
       </div>
       <WaveDivider />
     </>

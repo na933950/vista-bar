@@ -31,7 +31,7 @@ const Blog = () => {
       <div className={styles.articleContainer}>
         {articles
           ? articles
-              .slice(0, 3)
+              .slice(0, Math.min(3, articles.length))
               .map((article: any) => (
                 <Article
                   title={article.title}

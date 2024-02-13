@@ -26,7 +26,7 @@
 
 @media screen and (min-width: 750px) {
     .letter {
-        color: var(--text);
+        color: var(--text-secondary);
         font-family: var(--mono);
         font-weight: 800;
         position: relative;
@@ -35,7 +35,7 @@
 }
 @media screen and (max-width: 750px) {
     .letter {
-        color: var(--secondary);
+        color: var(--text-secondary);
         font-family: var(--mono);
         font-weight: 800;
         position: relative;
