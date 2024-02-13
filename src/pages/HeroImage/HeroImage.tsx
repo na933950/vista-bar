@@ -51,7 +51,7 @@ const HeroImage = ({ scrollToAbout }: Props) => {
         <div className={styles.textContainer}>
           <div className={styles.auxContainer}>
             <Fade delay={delay}>
-              <h1 className={styles.heading}>Vista Law Coaching</h1>
+              <h1 className={styles.heading}>Vista Law Coach</h1>
             </Fade>
             <Fade delay={delay * 2} from="bottom">
               <div className={styles.phraseContainer}>

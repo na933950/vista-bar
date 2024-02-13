@@ -55,10 +55,10 @@
   }
   .heading {
     font-size: var(--large);
-    color: var(--accent);
+    color: var(--light);
   }
   .subtitle {
-    color: var(--text);
+    color: var(--text-secondary);
   }
   .graphicContainer {
     flex: 1;

@@ -1,0 +1,70 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.articleContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  box-sizing: border-box;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  line-height: 2;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.textContainer h1 {
+  font-size: var(--xx-large);
+  color: var(--text);
+  font-weight: bold;
+}
+
+.textContainer h3 {
+  font-size: var(--small);
+  color: var(--accent);
+  font-weight: bold;
+}
+
+.textContainer a {
+    font-size: var(--small);
+    color: var(--text-secondary);
+    background-color: var(--accent);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    border-radius: 5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin-top: 1.5rem;
+    transition-property: color, background-color;
+    transition-duration: 0.5s;
+    border: 2px solid var(--accent);
+}
+
+.textContainer a:hover {
+    color: var(--text);
+    background-color: var(--background);
+}

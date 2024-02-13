@@ -7,7 +7,7 @@
   align-items: center;
   transition: 0.3s;
   position: fixed;
-  color: var(--text-secondary);
+  color: var(--text);
   font-size: var(--medium);
   z-index: 5;
 }
@@ -57,7 +57,7 @@
 
 .computerLinksContainer a:hover, .computerLinksContainerDown a:hover{
   background-color: var(--accent);
-  color: var(--secondary);
+  color: var(--text-secondary);
   cursor: pointer;
 }
 
@@ -77,7 +77,7 @@
   align-items: center;
   z-index: 5;
   transition: 0.3s;
-  color: var(--text-secondary);
+  color: var(--text);
 }
 
 .mobileContainerDown {
@@ -88,7 +88,6 @@
   position: fixed;
   transition: 0.3s;
   background-color: var(--text-secondary);
-  color: var(--text);
   z-index: 5;
   box-shadow: 0px 0px 10px 2px var(--text);
 }
@@ -116,8 +115,8 @@
   justify-content: center;
   font-size: var(--medium);
   background-color: var(--primary);
+  color: var(--text-secondary);
   z-index: 10;
-  color: var(--secondary);
   transition-property: left;
   transition-duration: 0.6s;
 }

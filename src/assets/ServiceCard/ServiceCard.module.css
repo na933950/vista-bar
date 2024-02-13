@@ -1,9 +1,10 @@
 .container {
     position: relative;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: var(--primary);
+    background-color: var(--accent);
     color: var(--text);
     text-align: left;
     box-sizing: border-box;
@@ -11,6 +12,13 @@
     align-items: start;
     border-radius: 1rem;
     box-shadow: 0px 0px 20px 5px #CCCCCC;
+    transition-property: box-shadow, transform;
+    transition-duration: 0.8s;
+    transform: scale(1);
+}
+
+.container:hover {
+    transform: scale(1.1);
 }
 
 .upperContainer {
@@ -48,7 +56,7 @@
     border-radius: 5rem;
     top: calc(-1.5rem - (var(--large) / 2));
     left: 10%;
-    background-color: var(--primary);
+    background-color: var(--accent);
     color: var(--text-secondary);
     font-size: var(--large);
     z-index: 2;
@@ -63,11 +71,8 @@
 }
 
 .title {
-    font-size: var(--small);
-}
-
-.price {
-    font-size: var(--xxx-large);
+    font-size: var(--large);
+    line-height: 1.5;
 }
 
 .amenitiesContainer {
@@ -119,7 +124,7 @@
 .learnBtn {
     box-sizing: border-box;
     padding: 1rem;
-    background-color: var(--primary);
+    background-color: var(--accent);
     color: var(--text-secondary);
     border-radius: 0.5rem;
     border: 1.5px solid var(--background);
@@ -131,7 +136,7 @@
 
 .registerBtn:hover {
     cursor: pointer;
-    background-color: var(--primary);
+    background-color: var(--accent);
     color: var(--text-secondary);
 }
 

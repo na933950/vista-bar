@@ -5,6 +5,9 @@ import HeroImage from "./pages/HeroImage";
 import About from "./pages/About";
 import { useRef } from "react";
 import Services from "./pages/Services";
+import Blog from "./pages/Blog";
+import ReactDOM from "react-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
   const aboutRef = useRef<HTMLDivElement>(null);
@@ -49,16 +52,21 @@ function App() {
   ];
 
   return (
-    <div>
-      <Navbar pages={pages} />
-      <HeroImage scrollToAbout={scrollToAbout} />
-      <div ref={aboutRef}>
-        <About />
+    <Router>
+      <div>
+        <Navbar pages={pages} />
+        <HeroImage scrollToAbout={scrollToAbout} />
+        <div ref={aboutRef}>
+          <About />
+        </div>
+        <div ref={serviceRef}>
+          <Services />
+        </div>
+        <div>
+          <Blog />
+        </div>
       </div>
-      <div ref={serviceRef}>
-        <Services />
-      </div>
-    </div>
+    </Router>
   );
 }
 

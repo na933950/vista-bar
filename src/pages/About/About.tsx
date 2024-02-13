@@ -8,14 +8,13 @@ const About = () => {
     <div className={styles.container}>
       <div className={styles.section1}>
         <Fade scroll={true} className={styles.textContainer}>
-          <h3>About Me</h3>
           <h2>
-            Experienced with the
+            Experience with the
             <br />
-            <span className={styles.accent}>Legal Journey</span>
+            <span className={styles.accent}>Law Journey</span>
           </h2>
           <p>
-            I am graduate of the English Honors Program at SUNY Albany, magna
+            <i>Note from the founder: </i>I am a graduate of the English Honors Program at SUNY Albany, magna
             cum laude (1992), Cornell Law School JD (1999) and an LLM from the
             Fletcher School of Law and Diplomacy (2009). I am a member of the
             New York (2001), Massachusetts (1999) and Connecticut (2000) Bars. I

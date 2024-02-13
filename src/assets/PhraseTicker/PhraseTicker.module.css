@@ -6,3 +6,23 @@
     flex-wrap: wrap;
     overflow: hidden;
 }
+
+@media screen and (min-width: 750px) {
+    .letter {
+        color: var(--text-secondary);
+        position: relative;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 750px) {
+    .letter {
+        color: var(--text-secondary);
+        position: relative;
+        padding: 0;
+    }
+}
+
+.letter {
+    transition-duration: 1s;
+    transition-property: opacity;
+}

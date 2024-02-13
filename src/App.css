@@ -141,18 +141,20 @@ html {
 
 :root {
   --text: #050315;
+  --article-bg: #eeeeee;
+  --background: #fbfbfe;
+  --primary: #1c761a;
+  --secondary: #789a13;
+  --accent: #1f6791;
+  --light: #6c93ab;
   --text-secondary: #ffffff;
   --mono: "Roboto Mono", monospace;
-  --background: #ffffff;
-  --primary: #2f27ce;
-  --secondary: #dedcff;
-  --accent: #433bff;
   --tiny: 0.75rem;
   --small: 1rem;
   --medium: 1.25rem;
   --large: 1.5rem;
   --x-large: 1.75rem;
-  --xx-large: 2.0rem;
+  --xx-large: 2rem;
   --xxx-large: 2.5rem;
   --huge: 3rem;
   --x-huge: 3.5rem;

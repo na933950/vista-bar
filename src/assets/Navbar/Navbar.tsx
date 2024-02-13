@@ -72,7 +72,7 @@ const Navbar = ({ pages }: NavbarProps) => {
       <div className={styles.mobileOptionsLogoContainer}>
         <IoClose className={styles.closeBtn} onClick={closeMobileNav} />
         <img className={styles.optionLogo} src="./logo" alt="logo"></img>
-        <h2 className={styles.optionHeader}>Vista Law Prep</h2>
+        <h2 className={styles.optionHeader}>Vista Law Coach</h2>
       </div>
       <div className={styles.mobileOptionFlex}>
         {pages.map(({ pageName, pageRouter, pageIcon }) => (
@@ -90,7 +90,7 @@ const Navbar = ({ pages }: NavbarProps) => {
         ))}
       </div>
       <div className={styles.optionFooter}>
-        <p>@ Vista Bar Coaching 2024</p>
+        <p>@ Vista Law Coach 2024</p>
       </div>
     </div>
   );

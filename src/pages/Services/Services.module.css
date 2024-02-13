@@ -28,7 +28,7 @@
 
 .textContainer h3 {
     font-size: var(--small);
-    color: var(--primary);
+    color: var(--accent);
     font-weight: bold;
 }
 
@@ -37,6 +37,8 @@
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
         gap: 2rem;
         box-sizing: border-box;
         padding-left: 5rem;

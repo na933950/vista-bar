@@ -67,8 +67,7 @@ const BentoBox = ({ scrollToAbout }: Props) => {
               delay={2800}
             >
               <h1>
-                <b>3 </b>
-                Services
+                Suite of Services
               </h1>
             </Fade>
             <div className={[styles.r1rb, styles.box].join(" ")}>

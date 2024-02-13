@@ -10,6 +10,7 @@ interface Props {
 const PhraseTicker = ({ phrases, size = "var(--xx-large)" }: Props) => {
   const [longestPhraseLength, setLongestPhraseLength] = useState(0);
   const [currIndex, setCurrIndex] = useState(0);
+  const [currOpacity, setCurrOpacity] = useState(1);
 
   useEffect(() => {
     for (let i = 0; i < phrases.length; i++) {
@@ -31,27 +32,23 @@ const PhraseTicker = ({ phrases, size = "var(--xx-large)" }: Props) => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       const newIndex = (currIndex + 1) % phrases.length;
-      setCurrIndex(newIndex);
+      setCurrOpacity(0);
+      setTimeout(() => {
+        setCurrIndex(newIndex);
+        setCurrOpacity(1);
+      }, 1000);
     }, 5000);
 
     return () => clearInterval(intervalId);
   }, [currIndex]);
 
   return (
-    <div
-      className={styles.container}
-      style={{ height: size, gap: `calc((2/3) * ${size})` }}
+    <h1
+      className={styles.letter}
+      style={{ fontSize: size, opacity: currOpacity }}
     >
-      {addNecessaryCharacters(phrases[currIndex])
-        .split("")
-        .map((letter) => (
-          <LetterTicker
-            targetLetter={letter}
-            caps={true}
-            size={size}
-          ></LetterTicker>
-        ))}
-    </div>
+      {addNecessaryCharacters(phrases[currIndex])}
+    </h1>
   );
 };
 

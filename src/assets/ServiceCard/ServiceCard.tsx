@@ -9,10 +9,9 @@ interface Props {
   title: string;
   text: string;
   amenities: string[];
-  price: string;
 }
 
-const ServiceCard = ({ icon, title, text, amenities, price }: Props) => {
+const ServiceCard = ({ icon, title, text, amenities }: Props) => {
   const [moreSeen, setMoreSeen] = useState(false);
 
   const switchText = () => {
@@ -24,8 +23,7 @@ const ServiceCard = ({ icon, title, text, amenities, price }: Props) => {
       <div className={styles.iconContainer}>{icon}</div>
       <div className={styles.upperContainer}>
         <div className={styles.titleContainer}>
-          <h2 className={styles.title}>{title}</h2>
-          <h1 className={styles.price}>{price}</h1>
+          <h1 className={styles.title}>{title}</h1>
         </div>
       </div>
       <div className={styles.lowerContainer}>

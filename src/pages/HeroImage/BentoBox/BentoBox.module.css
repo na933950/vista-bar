@@ -27,7 +27,7 @@
 .l1 {
   flex: 1;
   width: 100%;
-  background-color: var(--secondary);
+  background-color: var(--primary);
 }
 
 .l2 {
@@ -43,6 +43,7 @@
   padding: 0rem;
 }
 
+/*
 @keyframes bop {
   0% {
     padding: 0rem;
@@ -59,7 +60,7 @@
   100% {
     padding: 0rem;
   }
-}
+}*/
 
 @media screen and (min-width: 1200px) {
   .l2 h1 {
@@ -90,7 +91,7 @@
 .l3r {
   flex: 1;
   height: 100%;
-  background-color: var(--text);
+  background-color: var(--light);
 }
 
 .r {
@@ -231,7 +232,7 @@ b {
 .inner {
   width: 100%;
   height: 100%;
-  background-color: var(--text);
+  background-color: var(--light);
   border-radius: 1rem;
   box-sizing: border-box;
 }
