@@ -18,7 +18,7 @@ const Footer = ({ pages }: Props) => {
     <div className={styles.container}>
       <div className={styles.topContainer}>
         <div className={styles.left}>
-          <h2>Vista Law Coach</h2>
+          <h2>Vista Law Coaching</h2>
           <p className={styles.email}>vistalaw@gmail.com</p>
           <div className={styles.mediaContainer}>
             <a href="#">
@@ -44,7 +44,7 @@ const Footer = ({ pages }: Props) => {
         </div>
       </div>
       <div className={styles.bottom}>
-        <p>@ Vista Law Coach 2024. All Rights Reserved.</p>
+        <p>@ Vista Law Coaching 2024. All Rights Reserved.</p>
       </div>
     </div>
   );

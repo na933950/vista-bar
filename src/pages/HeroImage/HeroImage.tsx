@@ -8,9 +8,10 @@ import WaveDivider from "../../assets/WaveDivider/WaveDivider";
 
 interface Props {
   scrollToAbout: () => void;
+  scrollToServices: () => void;
 }
 
-const HeroImage = ({ scrollToAbout }: Props) => {
+const HeroImage = ({ scrollToAbout, scrollToServices }: Props) => {
   const phrases = [
     ["BAR EXAM ", "LAW SCHOOL ", "LAW SCHOOL "],
     ["EXPERIENCE ", "ENTRY ", "EXPERIENCE "],
@@ -47,12 +48,15 @@ const HeroImage = ({ scrollToAbout }: Props) => {
 
   return (
     <>
-      <div className={styles.container} style={{backgroundImage: `url(${heroimage})`}}>
-      <div className={styles.underlay}></div>
+      <div
+        className={styles.container}
+        style={{ backgroundImage: `url(${heroimage})` }}
+      >
         <div className={styles.textContainer}>
           <div className={styles.auxContainer}>
+            <div className={styles.underlay}></div>
             <Fade delay={delay}>
-              <h1 className={styles.heading}>Vista Law Coach</h1>
+              <h1 className={styles.heading}>Vista Law Coaching</h1>
             </Fade>
             <Fade delay={delay * 2} from="bottom">
               <div className={styles.phraseContainer}>
@@ -65,15 +69,20 @@ const HeroImage = ({ scrollToAbout }: Props) => {
                 Coaching for every step of the legal journey.
               </p>
             </Fade>
-            <Fade className={styles.btnContainer} delay={4 * delay} from="right">
-              <div className={styles.btn1} onClick={scrollToAbout}>Learn More</div>
-              <div className={styles.btn2}>Services</div>
+            <Fade
+              className={styles.btnContainer}
+              delay={4 * delay}
+              from="right"
+            >
+              <div className={styles.btn1} onClick={scrollToAbout}>
+                Learn More
+              </div>
+              <div className={styles.btn2} onClick={scrollToServices}>
+                Services
+              </div>
             </Fade>
           </div>
         </div>
-        {<div className={styles.graphicContainer}>
-          <BentoBox scrollToAbout={scrollToAbout}/>
-        </div>}
       </div>
       <WaveDivider />
     </>

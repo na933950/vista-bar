@@ -15,9 +15,11 @@ const Testimonial = ({ img, name, role, testimonial }: Props) => {
         <img src={img} />
       </div>
       <div className={styles.textContainer}>
-        <h3>{name}</h3>
-        <h4>{role}</h4>
-        <p>{testimonial}</p>
+        <div className={styles.textUContainer}>
+          <h3>{name}</h3>
+          <h4>{role}</h4>
+          <p>{testimonial}</p>
+        </div>
         <div className={styles.rating}>
           <FaCircle />
           <FaCircle />

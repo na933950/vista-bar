@@ -90,7 +90,7 @@ function App() {
       <div>
         <Navbar pages={pages} />
         <div ref={homeRef}></div>
-        <HeroImage scrollToAbout={scrollToAbout} />
+        <HeroImage scrollToAbout={scrollToAbout} scrollToServices={scrollToService}/>
         <div ref={aboutRef}>
           <About />
         </div>

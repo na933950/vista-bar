@@ -53,17 +53,17 @@ const About = () => {
           <Globe />
         </Fade>
         <Fade className={styles.textContainer3} scroll={true}>
-          <h3>My Clients</h3>
+          <h3>Our Clients</h3>
           <h2>
             Serving Clients
             <br />
             <span className={styles.accent}>Everywhere</span>
           </h2>
           <p>
-            My clients have ranged from local law graduates and lawyers to
+            Our clients have ranged from local law graduates and lawyers to
             international lawyers who are looking to better understand the US
-            Legal System. I speak five different languages and offer services to
-            all, indiscriminate of location!
+            Legal System. We speak five different languages and offer services to
+            all, regardless of location!
           </p>
         </Fade>
       </div>

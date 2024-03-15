@@ -4,6 +4,7 @@ import { FaBriefcase } from "react-icons/fa6";
 import { IoSchoolSharp } from "react-icons/io5";
 import { FaBuildingColumns } from "react-icons/fa6";
 import Fade from "../../assets/Fade";
+import { useEffect, useRef, useState } from "react";
 
 interface Service {
   icon: React.ReactNode;
@@ -14,7 +15,7 @@ interface Service {
 }
 
 const Services = () => {
-  const services: Service[] = [
+  const [services, setServices] = useState<Service[]>([
     {
       icon: <FaBuildingColumns />,
       title: "Law School Application Coaching",
@@ -54,18 +55,44 @@ const Services = () => {
       ],
       price: "$300",
     },
-  ];
+  ]);
+
+  // Setting all titles to the same length so it sizes things the same in cards...
+  useEffect(() => {
+    let maxLen = 0;
+    services.forEach((service) => {
+      if (service.title.length > maxLen) {
+        maxLen = service.title.length;
+      }
+    });
+    const newServices: Service[] = [];
+    services.forEach((service) => {
+      let diffLen = maxLen - service.title.length;
+      let extraSpaces = "";
+      for (let i = 0; i < diffLen; i++) {
+        extraSpaces += " ";
+      }
+      let newService = { ...service };
+      newService.title += extraSpaces;
+      newServices.push(newService);
+    });
+    setServices(newServices);
+  }, []);
+
+  const serviceContainerRef = useRef<HTMLDivElement>(null);
+
+
   return (
     <div className={styles.container}>
       <Fade className={styles.textContainer} scroll={true}>
         <h3>Services</h3>
-        <h1>What I Offer</h1>
+        <h1>What We Offer</h1>
         <p>
-          I offer a variety of law-related services, including application
+          We offer a variety of law-related services, including application
           advising, law school planning, and bar exam preparation!
         </p>
       </Fade>
-      <div className={styles.serviceContainer}>
+      <div className={styles.serviceContainer} ref={serviceContainerRef}>
         {services.map((service) => (
           <ServiceCard {...service} />
         ))}

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import styles from "./Navbar.module.css";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
+import logo from "/images/vista_logo.png";
 
 interface PageInfo {
   pageName: string;
@@ -56,7 +57,7 @@ const Navbar = ({ pages }: NavbarProps) => {
   const mobileNav = (
     <div className={scrollY < 200 ? styles.mobileContainer : styles.mobileContainerDown} onClick={openMobileNav}>
       <div className={styles.computerLogoContainer}>
-        <img src="./logo" alt="logo" />
+        <img src={logo} alt="logo" />
       </div>
       <div className={scrollY < 200 ? styles.mobileBarContainer : styles.mobileBarContainerDown}>
         <FaBarsStaggered className={styles.mobileBar} />
@@ -71,8 +72,8 @@ const Navbar = ({ pages }: NavbarProps) => {
     >
       <div className={styles.mobileOptionsLogoContainer}>
         <IoClose className={styles.closeBtn} onClick={closeMobileNav} />
-        <img className={styles.optionLogo} src="./logo" alt="logo"></img>
-        <h2 className={styles.optionHeader}>Vista Law Coach</h2>
+        <img className={styles.optionLogo} src={logo} alt="logo"></img>
+        <h2 className={styles.optionHeader}>Vista Law Coaching</h2>
       </div>
       <div className={styles.mobileOptionFlex}>
         {pages.map(({ pageName, pageRouter, pageIcon }) => (
@@ -90,7 +91,7 @@ const Navbar = ({ pages }: NavbarProps) => {
         ))}
       </div>
       <div className={styles.optionFooter}>
-        <p>@ Vista Law Coach 2024</p>
+        <p>@ Vista Law Coaching 2024</p>
       </div>
     </div>
   );
@@ -99,7 +100,7 @@ const Navbar = ({ pages }: NavbarProps) => {
   const computerNav = (
     <div className={scrollY < 200 ? styles.computerContainer : styles.computerContainerDown}>
       <div className={styles.computerLogoContainer}>
-        <img src="./logo" alt="logo" />
+        <img src={logo} alt="logo" />
       </div>
       <div className={scrollY < 200 ? styles.computerLinksContainer : styles.computerLinksContainerDown}>
         {pages.map(({ pageName, pageRouter }) => (

@@ -1,5 +1,5 @@
 import styles from "./Article.module.css";
-import hero from "/images/heroimage.jpg";
+import logo from "/images/vista_logo_white_bg.png";
 import { GiBarbedSun } from "react-icons/gi";
 
 interface Props {
@@ -69,7 +69,7 @@ const Article = ({ img, title, date, link }: Props) => {
   return (
     <a className={styles.container} href={link} target="_blank">
       <div className={styles.imgContainer}>
-        <img src={img ? img : hero}></img>
+        <img src={img ? img : logo}></img>
       </div>
       <div className={styles.textContainer}>
         <p className={styles.featured}>F E A T U R E D</p>

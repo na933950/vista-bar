@@ -37,11 +37,12 @@
   }
   .auxContainer {
     display: flex;
-    height: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
+    box-sizing: border-box;
+    padding: 1.5rem;
   }
 }
 @media screen and (min-width: 750px) {
@@ -86,11 +87,19 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 1.5rem;
     box-sizing: border-box;
     padding: 3rem;
+    gap: 1.25rem;
     position: relative;
   }
+}
+
+.textContainer {
+  position: relative;
+}
+
+.auxContainer {
+  position: relative;
 }
 
 .underlay {
@@ -98,8 +107,9 @@
   width: 100%;
   height: 100%;
   background-color: black;
-  opacity: 0.3;
+  opacity: 0.5;
 }
+
 
 .phraseContainer {
   margin: 0;
