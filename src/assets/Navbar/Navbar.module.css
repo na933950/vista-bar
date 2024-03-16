@@ -7,7 +7,7 @@
   align-items: center;
   transition: 0.3s;
   position: fixed;
-  color: var(--text);
+  color: var(--text-secondary);
   font-size: var(--medium);
   z-index: 5;
 }
