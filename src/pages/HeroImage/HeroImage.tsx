@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import PhraseTicker from "../../assets/PhraseTicker";
 import styles from "./HeroImage.module.css";
 import Fade from "../../assets/Fade";
-import BentoBox from "./BentoBox";
 import heroimage from "/images/heroimage.jpg";
 import WaveDivider from "../../assets/WaveDivider/WaveDivider";
 
