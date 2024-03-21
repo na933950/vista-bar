@@ -35,8 +35,6 @@
 .testimonialContainer {
   display: grid;
   margin-top: 4rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
   gap: 2rem;
   margin-bottom: 7rem;
 }
@@ -45,16 +43,22 @@
     .testimonialContainer {
       grid-template-columns: 1fr;
       gap: 6rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
     }
   }
 @media screen and (min-width: 1300px) {
   .testimonialContainer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 }
 @media screen and (max-width: 1300px) and (min-width: 800px) {
   .testimonialContainer {
     grid-template-columns: 1fr 1fr;
     gap: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }
