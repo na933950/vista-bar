@@ -43,7 +43,7 @@ const ServiceCard = ({ icon, title, text, amenities }: Props) => {
         <div className={styles.btnContainer}>
           <a className={styles.registerBtn} href="https://app.acuityscheduling.com/schedule.php?owner=31737911">Schedule Appointment</a>
           <div className={styles.learnBtn} onClick={switchText}>
-            {moreSeen ? "See Less" : "See More"}
+            {moreSeen ? "Our Mission" : "See More"}
           </div>
         </div>
       </div>

@@ -9,8 +9,7 @@ const Testimonials = () => {
       <Fade className={styles.textContainer} scroll={true}>
         <h3>Testimonials</h3>
         <h1>
-          We Care About Customer <br />
-          Experience Too
+          We Care About Your Experience
         </h1>
       </Fade>
       <div className={styles.testimonialContainer}>

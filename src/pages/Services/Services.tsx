@@ -19,10 +19,10 @@ const Services = () => {
     {
       icon: <FaBuildingColumns />,
       title: "Choosing a Career in Law or Advocacy",
-      text: "With thousands of law schools, only a few will be the right fit for you. I can help you identify the right ones for you, and help you present your best application. I will work with you to create a personalized plan to help you identify your priorities.",
+      text: "With hundreds of law schools, only a few will be the right fit for you. I can help you identify the right ones for you, and help you present your best application. I will work with you to create a personalized plan to help you identify your priorities.",
       amenities: [
         "Law School or Another Path?",
-        "Grad School selection strategy",
+        "School selection strategy",
         "Application timeline and plan development",
         "Communicating and meeting with admissions professionals",
         "Best communication practices with faculty",

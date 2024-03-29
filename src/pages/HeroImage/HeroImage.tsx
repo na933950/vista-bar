@@ -13,7 +13,7 @@ interface Props {
 const HeroImage = ({ scrollToAbout, scrollToServices }: Props) => {
   const phrases = [
     ["BAR EXAM ", "LAW SCHOOL ", "LAW SCHOOL "],
-    ["EXPERIENCE ", "ENTRY ", "EXPERIENCE "],
+    ["COACHING ", "ENTRY ", "EXPERIENCE "],
   ];
   const [screenWidth, setScreenWidth] = useState(window.outerWidth);
 
