@@ -19,7 +19,7 @@ const Footer = ({ pages }: Props) => {
       <div className={styles.topContainer}>
         <div className={styles.left}>
           <h2>Vista Law Coaching</h2>
-          <p className={styles.email}>vistalaw@gmail.com</p>
+          <p className={styles.email}>vistalawcoaching@gmail.com</p>
           <div className={styles.mediaContainer}>
             <a href="#">
               <FaFacebook />

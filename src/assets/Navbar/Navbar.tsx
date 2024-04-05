@@ -72,7 +72,7 @@ const Navbar = ({ pages }: NavbarProps) => {
     >
       <div className={styles.mobileOptionsLogoContainer}>
         <IoClose className={styles.closeBtn} onClick={closeMobileNav} />
-        <img className={styles.optionLogo} src={logo} alt="logo"></img>
+        <img className={styles.optionLogo} src={logo} alt="Vista Law Coaching Logo"></img>
         <h2 className={styles.optionHeader}>Vista Law Coaching</h2>
       </div>
       <div className={styles.mobileOptionFlex}>
