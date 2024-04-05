@@ -83,7 +83,7 @@ const HeroImage = ({ scrollToAbout, scrollToServices }: Props) => {
           </div>
         </div>
       </div>
-      <WaveDivider />
+      {screenWidth > 900 ? <WaveDivider /> : null}
     </>
   );
 };
