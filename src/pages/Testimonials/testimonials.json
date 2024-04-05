@@ -1,26 +1,26 @@
 [
-    {
-        "img": "/images/jiaying_chen_pfp.jpg",
-        "name": "Jiaying Chen",
-        "role": "Attorney",
-        "testimonial": "Susan sees potential in people and she knows exactly how to help you to achieve your goals. She not only guided me when I was in law school but also on my legal journey after school. Thank you, Susan!"
-    },
-    {
-        "img": "/images/juliana_lobo_pfp.jpg",
-        "name": "Juliana Lobo",
-        "role": "Foreign Attorney",
-        "testimonial": "Susan's deep understanding of the legal system and personalized guidance helped me navigate the bar exam with confidence. I'm grateful for her mentorship, which not only helped me pass the exam but also prepared me for my legal career ahead."
-    },
-    {
-        "img": "/images/zachary_richmond.jpg",
-        "name": "Zachary Richmond",
-        "role": "Law Student",
-        "testimonial": "I worked with Susan at a pivotal time in my law school path. Susan's work and ability to coach me through the law school application process was influential on my mindset and self-confidence to pursue a legal career."
-    },
-    {
-        "img": "/images/susan_headshot.jpg",
-        "name": "Famitah Ensandoost",
-        "role": "Undergraduate Student",
-        "testimonial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco"
-    }
+  {
+    "img": "/images/jiaying_chen_pfp.jpg",
+    "name": "Jiaying Chen",
+    "role": "Attorney",
+    "testimonial": "Susan sees potential in people and she knows exactly how to help you to achieve your goals. She not only guided me when I was in law school but also on my legal journey after school. Thank you, Susan!"
+  },
+  {
+    "img": "/images/juliana_lobo_pfp.jpg",
+    "name": "Juliana Lobo",
+    "role": "Foreign Attorney",
+    "testimonial": "Susan's deep understanding of the legal system and personalized guidance helped me navigate the bar exam with confidence. I'm grateful for her mentorship, which not only helped me pass the exam but also prepared me for my legal career ahead."
+  },
+  {
+    "img": "/images/zachary_richmond.jpg",
+    "name": "Zachary Richmond",
+    "role": "Law Student",
+    "testimonial": "I worked with Susan at a pivotal time in my law school path. Susan's work and ability to coach me through the law school application process was influential on my mindset and self-confidence to pursue a legal career."
+  },
+  {
+    "img": "/images/kristina_shcheglazova.png",
+    "name": "Kristina Shcheglazova",
+    "role": "International Trade Law Attorney (U.S. / Russia)",
+    "testimonial": "Navigating the complexities of the U.S. law school admission process was made immeasurably easier with Susan’s guidance and invaluable insights.  Her expertise not only illuminated my path to obtaining my LL.M. degree but also inspired confidence and clarity every step of the way."
+  }
 ]

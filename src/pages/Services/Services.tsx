@@ -65,7 +65,7 @@ const Services = () => {
         <h3>Services</h3>
         <h1>What We Offer</h1>
         <p>
-          We offer a variety of law-related services, including application
+          We offer a variety of educational services, including application
           advising, law school planning, and bar exam preparation!
         </p>
       </Fade>
