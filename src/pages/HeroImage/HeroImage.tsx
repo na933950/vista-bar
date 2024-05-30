@@ -3,7 +3,6 @@ import PhraseTicker from "../../assets/PhraseTicker";
 import styles from "./HeroImage.module.css";
 import Fade from "../../assets/Fade";
 import heroimage from "/images/heroimage.jpg";
-import WaveDivider from "../../assets/WaveDivider/WaveDivider";
 
 interface Props {
   scrollToAbout: () => void;
@@ -82,8 +81,7 @@ const HeroImage = ({ scrollToAbout, scrollToServices }: Props) => {
             </Fade>
           </div>
         </div>
-      </div>
-      {screenWidth > 900 ? <WaveDivider /> : null}
+      </div>{" "}
     </>
   );
 };

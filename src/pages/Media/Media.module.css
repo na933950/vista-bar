@@ -1,0 +1,179 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  line-height: 2;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+}
+
+.textContainer h3 {
+  font-size: var(--small);
+  color: var(--accent);
+  font-weight: bold;
+}
+
+
+@media screen and (min-width: 800px) {
+    .secondContainer {
+        padding: 5rem;
+    }
+} 
+
+@media screen and (max-width: 800px) {
+    .secondContainer {
+        padding: 2rem;
+    }
+}
+
+.secondContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100vw;
+    margin-top: 5rem;
+    gap: 5rem;
+    box-sizing: border-box;
+  }
+
+.secondContainer h1 {
+    line-height: 1.6;
+}
+
+@media screen and (max-width: 1300px) {
+    .secondContainer {
+        flex-direction: column;
+    }
+}
+
+.publicationsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  text-align: left;
+  flex: 1;
+  gap: 2rem;
+  box-sizing: border-box;
+}
+
+.youtubeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  text-align: left;
+  flex: 1;
+  gap: 2rem;
+  box-sizing: border-box;
+}
+
+.sectionHeader {
+  font-size: var(--xx-large);
+  color: var(--text);
+  font-weight: bold;
+}
+
+.subtitle {
+    line-height: 2;
+}
+
+.plBold {
+    color: var(--accent);
+    font-weight: bold;
+}
+
+.pubLst {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.lAndP {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    line-height: 2;
+}
+
+.lAndP h2 {
+    font-size: var(--small);
+    font-weight: bold;
+}
+
+.lAndP a {
+    color: var(--text);
+    transition-duration: 0.3s;
+}
+
+.lAndP a:hover {
+    text-decoration: underline;
+    color: var(--accent);
+}
+
+.tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding-top: 0.3rem;
+}
+
+.tag {
+    color: white;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    background-color: var(--accent);
+    border-radius: 3rem;
+    box-sizing: border-box;
+}
+
+.tag2 {
+    color: white;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    background-color: var(--secondary);
+    border-radius: 3rem;
+    box-sizing: border-box;
+}
+
+.youtubeContainer p {
+    line-height: 2;
+}
+
+.btnContainer {
+    width: 100%;
+    display: flex;
+    text-align: left;
+}
+
+.btnContainer a {
+    text-decoration: none;
+    color: white;
+    background-color: var(--accent);
+    padding: 1rem;
+    border-radius: 0.67rem;
+    border: 2px solid var(--accent);
+    transition-property: background-color, color;
+    transition-duration: 0.5s;
+}
+
+.btnContainer a:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}

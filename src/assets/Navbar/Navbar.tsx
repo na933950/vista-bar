@@ -52,7 +52,7 @@ const Navbar = ({ pages }: NavbarProps) => {
     setMobileOptionsPosition("-100%");
   };
 
-  const breakpoint = 900;
+  const breakpoint = 1200;
 
   const mobileNav = (
     <div className={scrollY < 200 ? styles.mobileContainer : styles.mobileContainerDown} onClick={openMobileNav}>

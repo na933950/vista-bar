@@ -21,7 +21,6 @@ const Blog = () => {
   return (
     <div className={styles.container}>
       <Fade className={styles.textContainer} scroll={true}>
-        <h3>Blog</h3>
         <h1>My Medium</h1>
         <p>
           Stay up to date with my most recent blog publications by visiting my Medium account!

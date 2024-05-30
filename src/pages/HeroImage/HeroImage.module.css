@@ -56,7 +56,7 @@
   }
   .heading {
     font-size: var(--x-large);
-    color: var(--secondary);
+    color: white;
   }
   .subtitle {
     color: var(--text-secondary);

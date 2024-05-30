@@ -46,7 +46,9 @@
   justify-content: start;
   align-items: center;
   text-align: center;
-  padding: 2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
 }
 
 .textContainer h1 {
@@ -69,7 +71,7 @@
     padding-bottom: 0.5rem;
     padding-right: 1rem;
     padding-left: 1rem;
-    border-radius: 5rem;
+    border-radius: 0.67rem;
     text-align: center;
     display: flex;
     align-items: center;

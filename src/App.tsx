@@ -7,7 +7,7 @@ import { MdRateReview } from "react-icons/md";
 import About from "./pages/About";
 import { useRef } from "react";
 import Services from "./pages/Services";
-import Blog from "./pages/Blog";
+import Media from "./pages/Media";
 import { BrowserRouter as Router } from "react-router-dom";
 import Footer from "./assets/Footer";
 
@@ -39,11 +39,11 @@ function App() {
       });
     }
   };
-  const blogRef = useRef<HTMLDivElement>(null);
-  const scrollToBlog = () => {
-    if (blogRef.current) {
+  const mediaRef = useRef<HTMLDivElement>(null);
+  const scrollToMedia = () => {
+    if (mediaRef.current) {
       window.scrollTo({
-        top: blogRef.current.offsetTop,
+        top: mediaRef.current.offsetTop,
         behavior: "smooth",
       });
     }
@@ -74,8 +74,8 @@ function App() {
       pageIcon: <FaBriefcase />,
     },
     {
-      pageName: "Blog",
-      pageRouter: scrollToBlog,
+      pageName: "Media & Events",
+      pageRouter: scrollToMedia,
       pageIcon: <FaBlog />,
     },
     {
@@ -97,8 +97,8 @@ function App() {
         <div ref={serviceRef}>
           <Services />
         </div>
-        <div ref={blogRef}>
-          <Blog />
+        <div ref={mediaRef}>
+          <Media />
         </div>
         <div ref={testimonialRef}>
           <Testimonials />
