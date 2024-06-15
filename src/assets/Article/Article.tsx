@@ -1,5 +1,5 @@
 import styles from "./Article.module.css";
-import logo from "/images/vista_logo_white_bg.png";
+import logo from "/images/vista_business_card.jpg";
 import { GiBarbedSun } from "react-icons/gi";
 
 interface Props {

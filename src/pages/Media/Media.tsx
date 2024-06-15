@@ -96,7 +96,7 @@ const Media = () => {
           <h1 className={styles.sectionHeader}>YouTube</h1>
           <p>
             I've recently started a YouTube channel where I will be posting
-            informational content regarding the US Legal Process, the BAR Exam
+            informational content regarding the US law student application process, the US Uniform Bar Exam
             and preparation, law school experience, and study methods that have
             worked well for my clients! Please check out the channel and feel
             free to comment, like, share, and subscribe.

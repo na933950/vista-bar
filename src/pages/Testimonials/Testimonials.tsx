@@ -17,6 +17,7 @@ const Testimonials = () => {
       </div>
       <Fade className={styles.longTestimonialContainer} scroll={true}>
         <h1>Featured Testimonial</h1>
+        <h2>By Andrew Steinberg</h2>
         <p>
           "During the pandemic, I connected with Susan to learn more about
           immigration law for my undergraduate thesis. Her knowledge of the

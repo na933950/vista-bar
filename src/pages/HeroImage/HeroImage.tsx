@@ -64,7 +64,7 @@ const HeroImage = ({ scrollToAbout, scrollToServices }: Props) => {
             </Fade>
             <Fade delay={delay * 3} from="left">
               <p className={styles.subtitle} style={{ fontWeight: 700 }}>
-                Coaching for every step of the legal journey.
+                Coaching for every step of the law education journey.
               </p>
             </Fade>
             <Fade
