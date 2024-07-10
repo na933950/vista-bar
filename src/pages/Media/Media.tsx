@@ -16,7 +16,7 @@ const lecturesAndPublications: Lecture[] = [
     location: "Zoom Webinar",
     date: "June 27, 2024",
     link: "https://on.zoom.us/ev/AmEyLoZvXE9-ZITs06mQqjdjQcny9M8-skeQrpVciNbfxx79Ydkd~AggLXsr32QYFjq8BlYLZ5I06Dg",
-    tags: ["Lecture", "Upcoming"],
+    tags: ["Lecture"],
   },
   {
     name: "One of the Most Challenging and Rewarding Experiences of Your Life: Preparing for the LL.M. Experience and the U.S. Bar Exam",
