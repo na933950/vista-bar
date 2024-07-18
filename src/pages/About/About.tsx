@@ -63,7 +63,7 @@ const About = () => {
             Our clients have ranged from local law graduates and lawyers to
             international lawyers who are looking to better understand the US
             Legal System. We speak five different languages and offer coaching to
-            all, regardless of location! We are ont a law firm, and do not provide legal advice.
+            all, regardless of location! We are not a law firm, and do not provide legal advice.
           </p>
         </Fade>
       </div>

@@ -15,7 +15,7 @@ const lecturesAndPublications: Lecture[] = [
     name: "Predictions for Bar Exam Essay Questions, July 2024 Uniform Bar Exam",
     location: "Zoom Webinar",
     date: "June 27, 2024",
-    link: "https://on.zoom.us/ev/AmEyLoZvXE9-ZITs06mQqjdjQcny9M8-skeQrpVciNbfxx79Ydkd~AggLXsr32QYFjq8BlYLZ5I06Dg",
+    link: "",
     tags: ["Lecture"],
   },
   {
